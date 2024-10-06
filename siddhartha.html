@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Portal - Siddhartha Academy of Higher Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .fixed-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #001f4d;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        z-index: 1000;
+        display: flex; /* Use flexbox for header alignment */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .college-logo {
+        margin-right: 20px; /* Space between logo and text */
+    }
+
+    header .college-name h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    header .college-name h2 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    main {
+        margin-top: 150px; /* Add margin to push content below the fixed header */
+    }
+
+    .login-section {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-box {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+    }
+
+    .login-box h3 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .input-group label {
+        font-size: 14px;
+        color: #333;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+        color: #007bff;
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .forgot-password:hover {
+        text-decoration: underline;
+    }
+
+    .login-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .login-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .course-categories {
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .course-categories h3 {
+        font-size: 20px;
+        color: #333;
+    }
+
+    .course-categories ul {
+        list-style: none;
+        margin: 10px 0;
+    }
+
+    .course-categories li {
+        margin-bottom: 10px;
+    }
+
+    .expand-all {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .expand-all:hover {
+        text-decoration: underline;
+    }
+
+    .some-numbers {
+        background-color: #001f4d;
+        color: white;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .some-numbers h3 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        color: #f5b841;
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .number-item {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .number-item .icon {
+        font-size: 40px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .number-item .count {
+        font-size: 32px;
+        font-weight: bold;
+        color: #f5b841;
+    }
+</style>
+<body>
+    <header class="fixed-header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4b2QkNbbQtg-p6w-c2h_Y-wF2ALvnJw1j7Q&s" alt="College Logo" class="college-logo" width="150"style="height: 70px;> <!-- Replace with actual logo path -->
+        <div class="college-name">
+            <h1>Siddhartha Academy of Higher Education</h1>
+            <h2>Department of Information Technology</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-section">
+            <div class="login-box">
+                <h3>Access to the platform</h3>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="username">Roll Number or Email</label>
+                        <input type="text" id="username" name="username" placeholder="Roll Number / Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="input-group">
+                        <a href="#" class="forgot-password">Forgotten your username or password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">Log In</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="course-categories">
+            <h3>Course Categories</h3>
+            <ul>
+                <li>IT_PUBLICATIONS SOFT COPY (2)</li>
+                <li>2024-25</li>
+            </ul>
+            <a href="#" class="expand-all">Expand all</a>
+        </section>
+
+        <section class="some-numbers">
+            <h3>Some Numbers</h3>
+            <div class="numbers">
+                <div class="number-item">
+                    <span class="icon">👤</span>
+                    <span class="count">25514</span>
+                    <p>Users</p>
+                </div>
+                <div class="number-item">
+                    <span class="icon">🎓</span>
+                    <span class="count">594</span>
+                    <p>Courses</p>
+                </div>
+                <div class="number-item">
+                    <span class="icon">🧩</span>
+                    <span class="count">28760</span>
+                    <p>Activities</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
